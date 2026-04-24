@@ -359,5 +359,6 @@ FuckNetherHeightHooks& FuckNetherHeightHooks::getInstance() {
     static FuckNetherHeightHooks hooks;
     return hooks;
 }
-
+#ifdef LL_PLAT_S
 MolangScriptArg::MolangScriptArg() : mType(MolangScriptArgType::Float), mPOD() {}
+#endif
